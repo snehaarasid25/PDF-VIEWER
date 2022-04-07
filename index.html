@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="style.css">
+    <title>PDF VIEWER</title>
+
+    <!-- font aweosome cdn -->
+    <!-- js cdn -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <!-- css cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div class="top-bar">
+        <button class="btn" id="prev-page">
+            <i class="fas fa-arrow-circle-left"></i>Prev Page
+        </button>
+        <button class="btn" id="next-page">
+            <i class="fas fa-arrow-circle-right"></i>Next Page
+        </button>
+        <span class="page-info">
+            Page <span id="page-num"></span> of <span id="page-count"></span>
+        </span>
+    </div>
+
+    <canvas id="pdf-render"></canvas>
+
+    <!-- we need the pdf main CDN -->
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
